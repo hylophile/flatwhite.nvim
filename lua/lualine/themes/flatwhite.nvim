@@ -1,6 +1,6 @@
-local dracula = require("dracula")
-local configs = dracula.configs()
-local colors = dracula.colors()
+local flatwhite = require("flatwhite")
+local configs = flatwhite.configs()
+local colors = flatwhite.colors()
 
 local bg = configs.lualine_bg_color or colors.base4
 

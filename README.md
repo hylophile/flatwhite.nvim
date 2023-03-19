@@ -1,10 +1,8 @@
-<h1 align="center" >🧛‍♂️ dracula.nvim</h1>
+<p align="center"><a href="https://nope.com/">Flatwhite</a> colorscheme for <a href="https://neovim.io/">NEOVIM</a> written in Lua</p>
 
-<p align="center"><a href="https://draculatheme.com/">Dracula</a> colorscheme for <a href="https://neovim.io/">NEOVIM</a> written in Lua</p>
+<!-- ![TypeScript and NvimTree](./assets/1.png) -->
 
-![TypeScript and NvimTree](./assets/1.png)
-
-![Lua](./assets/2.png)
+<!-- ![Lua](./assets/2.png) -->
 
 ## ✔️ Requirements
 
@@ -33,35 +31,35 @@ Install via package manager
 
 ```lua
 -- Using Packer:
-use 'Mofiqul/dracula.nvim'
+use 'Mofiqul/flatwhite.nvim'
 ```
 
 ```vim
 " Using Vim-Plug:
-Plug 'Mofiqul/dracula.nvim'
+Plug 'Mofiqul/flatwhite.nvim'
 ```
 
 ## 🚀 Usage
 
 ```lua
 -- Lua:
-vim.cmd[[colorscheme dracula]]
+vim.cmd[[colorscheme flatwhite]]
 ```
 
 ```vim
 " Vim-Script:
-colorscheme dracula
+colorscheme flatwhite
 ```
 
 If you are using [`lualine`](https://github.com/hoob3rt/lualine.nvim), you can also enable the provided theme:
 
-> Make sure to set theme as 'dracula-nvim' as dracula already exists in lualine built in themes
+> Make sure to set theme as 'flatwhite' as flatwhite already exists in lualine built in themes
 
 ```lua
 require('lualine').setup {
   options = {
     -- ...
-    theme = 'dracula-nvim'
+    theme = 'flatwhite'
     -- ...
   }
 }
@@ -74,9 +72,9 @@ The configuration must be run before `colorscheme` command to take effect.
 If you're using lua
 
 ```lua
-local dracula = require("dracula")
-dracula.setup({
-  -- customize dracula color palette
+local flatwhite = require("flatwhite")
+flatwhite.setup({
+  -- customize flatwhite color palette
   colors = {
     bg = "#282A36",
     fg = "#F8F8F2",
@@ -112,7 +110,7 @@ dracula.setup({
   -- overrides the default highlights see `:h synIDattr`
   overrides = {
     -- Examples
-    -- NonText = { fg = dracula.colors().white }, -- set NonText fg to white
+    -- NonText = { fg = flatwhite.colors().white }, -- set NonText fg to white
     -- NvimTreeIndentMarker = { link = "NonText" }, -- link to NonText highlight
     -- Nothing = {} -- clear highlight of Nothing
   },
@@ -123,9 +121,9 @@ The same works in viml
 
 ```vim
 lua << EOF
-local dracula = require("dracula")
-dracula.setup({
-  -- customize dracula color palette
+local flatwhite = require("flatwhite")
+flatwhite.setup({
+  -- customize flatwhite color palette
   colors = {
     bg = "#282A36",
     fg = "#F8F8F2",
@@ -161,7 +159,7 @@ dracula.setup({
   -- overrides the default highlights see `:h synIDattr`
   overrides = {
     -- Examples
-    -- NonText = { fg = dracula.colors().white }, -- set NonText fg to white
+    -- NonText = { fg = flatwhite.colors().white }, -- set NonText fg to white
     -- NvimTreeIndentMarker = { link = "NonText" }, -- link to NonText highlight
     -- Nothing = {} -- clear highlight of Nothing
   },
@@ -172,9 +170,9 @@ EOF
 ## 🎨 Importing colors for other usage
 
 ```lua
-local colors = require('dracula').colors()
+local colors = require('flatwhite').colors()
 ```
 
 This will return the folowing table
 
-![colors](./assets/colors.png)
+<!-- ![colors](./assets/colors.png) -->
