@@ -2,46 +2,46 @@ local dracula = require("dracula")
 local configs = dracula.configs()
 local colors = dracula.colors()
 
-local bg = configs.lualine_bg_color or colors.black
+local bg = configs.lualine_bg_color or colors.base4
 
 local normal = {
-   a = { fg = colors.black, bg = colors.purple, gui = 'bold' },
-   b = { fg = colors.purple, bg = bg },
-   c = { fg = colors.white, bg = bg },
+	a = { fg = colors.base5, bg = colors.base2, gui = "bold" },
+	b = { fg = colors.base2, bg = bg },
+	c = { fg = colors.fg, bg = bg },
 }
 
 local command = {
-   a = { fg = colors.black, bg = colors.cyan, gui = 'bold' },
-   b = { fg = colors.cyan, bg = bg },
+	a = { fg = colors.teal_text, bg = colors.teal_bg, gui = "bold" },
+	b = { fg = colors.teal_text_sec, bg = bg },
 }
 
 local visual = {
-   a = { fg = colors.black, bg = colors.pink, gui = 'bold' },
-   b = { fg = colors.pink, bg = bg },
+	a = { fg = colors.purple_text, bg = colors.purple_bg, gui = "bold" },
+	b = { fg = colors.purple_text_sec, bg = bg },
 }
 
 local inactive = {
-   a = { fg = colors.white, bg = colors.visual, gui = 'bold' },
-   b = { fg = colors.black, bg = colors.white },
+	a = { fg = colors.white, bg = colors.visual, gui = "bold" },
+	b = { fg = colors.black, bg = colors.white },
 }
 
 local replace = {
-   a = { fg = colors.black, bg = colors.yellow, gui = 'bold' },
-   b = { fg = colors.yellow, bg = bg },
-   c = { fg = colors.white, bg = bg },
+	a = { fg = colors.black, bg = colors.yellow, gui = "bold" },
+	b = { fg = colors.yellow, bg = bg },
+	c = { fg = colors.white, bg = bg },
 }
 
 local insert = {
-   a = { fg = colors.black, bg = colors.green, gui = 'bold' },
-   b = { fg = colors.green, bg = bg },
-   c = { fg = colors.white, bg = bg },
+	a = { fg = colors.green_text, bg = colors.green_bg, gui = "bold" },
+	b = { fg = colors.green_text_sec, bg = bg },
+	c = { fg = colors.fg, bg = bg },
 }
 
 return {
-   normal = normal,
-   command = command,
-   visual = visual,
-   inactive = inactive,
-   replace = replace,
-   insert = insert,
+	normal = normal,
+	command = command,
+	visual = visual,
+	inactive = inactive,
+	replace = replace,
+	insert = insert,
 }
