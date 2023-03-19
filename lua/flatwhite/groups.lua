@@ -447,6 +447,11 @@ local function setup(configs)
 		rainbowcol5 = { fg = colors.pink },
 		rainbowcol6 = { fg = colors.cyan },
 		rainbowcol7 = { fg = colors.white },
+
+		-- Leap
+		LeapMatch = { fg = colors.bg, bg = colors.purple_text_sec },
+		LeapLabelPrimary = { fg = colors.bg, bg = colors.purple_text_sec },
+		LeapLabelSecondary = { fg = colors.bg, bg = colors.green_text_sec },
 	}
 end
 
