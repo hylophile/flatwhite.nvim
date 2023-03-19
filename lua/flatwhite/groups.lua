@@ -273,8 +273,8 @@ local function setup(configs)
 		TelescopeSelection = { fg = colors.white, bg = colors.selection },
 		TelescopeMultiSelection = { fg = colors.purple, bg = colors.selection },
 		TelescopeNormal = { fg = colors.fg, bg = colors.bg },
-		TelescopeMatching = { fg = colors.green },
-		TelescopePromptPrefix = { fg = colors.purple },
+		TelescopeMatching = colors.fw_green,
+		-- TelescopePromptPrefix = colors.fw_purple,
 
 		-- NvimTree
 		NvimTreeNormal = { fg = colors.fg, bg = colors.menu },
