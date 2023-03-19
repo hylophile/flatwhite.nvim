@@ -35,7 +35,7 @@ local function setup(configs)
 
 	return {
 		Normal = { fg = colors.fg, bg = colors.bg },
-		NormalFloat = { fg = colors.fg, bg = colors.bg },
+		NormalFloat = { fg = colors.fg, bg = colors.base6 },
 		Comment = { fg = colors.comment, italic = configs.italic_comment },
 		Constant = { fg = colors.yellow },
 		String = colors.fw_green,
