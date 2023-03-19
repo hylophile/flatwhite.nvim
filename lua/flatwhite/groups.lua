@@ -129,6 +129,7 @@ local function setup(configs)
 		["@error"] = colors.fw_red,
 		["@punctuation.delimiter"] = { fg = colors.fg },
 		["@punctuation.bracket"] = { fg = colors.fg },
+		-- ["@punctuation.special"] = { fg = colors.fg },
 		["@punctuation.special"] = { fg = colors.fg },
 
 		["@constant"] = { fg = colors.fg },
@@ -180,10 +181,10 @@ local function setup(configs)
 		["@text"] = { fg = colors.orange },
 		["@text.strong"] = { fg = colors.orange, bold = true }, -- bold
 		["@text.emphasis"] = { fg = colors.yellow, italic = true }, -- italic
-		["@text.underline"] = { fg = colors.orange },
-		["@text.title"] = { fg = colors.pink, bold = true }, -- title
-		["@text.literal"] = { fg = colors.yellow }, -- inline code
-		["@text.uri"] = { fg = colors.yellow, italic = true }, -- urls
+		["@text.underline"] = { fg = colors.orange, underline = true },
+		["@text.title"] = { fg = colors.purple_text, bg = colors.purple_bg, bold = true }, -- title
+		["@text.literal"] = colors.fw_orange,
+		["@text.uri"] = { fg = colors.blue_text, bg = colors.blue_bg, italic = true }, -- urls
 		["@text.reference"] = { fg = colors.orange, bold = true },
 
 		["@tag"] = { fg = colors.cyan },
