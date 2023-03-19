@@ -125,6 +125,8 @@ local function setup(configs)
 
 		EndOfBuffer = endOfBuffer,
 
+		WinSeparator = { fg = colors.base3 },
+
 		-- TreeSitter
 		["@error"] = colors.fw_red,
 		["@punctuation.delimiter"] = { fg = colors.fg },
