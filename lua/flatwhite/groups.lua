@@ -369,8 +369,8 @@ local function setup(configs)
 		IndentBlanklineChar = { fg = colors.base4 },
 
 		-- Nvim compe
-		CmpItemAbbrDeprecated = { fg = colors.white, bg = colors.menu },
-		CmpItemAbbrMatch = { fg = colors.cyan, bg = colors.menu },
+		CmpItemAbbrDeprecated = { strikethrough=true},
+		CmpItemAbbrMatch = colors.fw_green,
 
 		--barbar
 		BufferCurrentTarget = { fg = colors.red },
