@@ -134,8 +134,8 @@ local function setup(configs)
 		-- ["@punctuation.special"] = { fg = colors.fg },
 		["@punctuation.special"] = { fg = colors.fg },
 
-		["@constant"] = { fg = colors.fg },
-		["@constant.builtin"] = { fg = colors.fg },
+		["@constant"] = colors.fw_teal,
+		["@constant.builtin"] = colors.fw_teal,
 		["@symbol"] = { fg = colors.fg },
 
 		["@comment"] = { fg = colors.base2, italic = true },
@@ -149,7 +149,7 @@ local function setup(configs)
 		["@boolean"] = colors.fw_teal,
 		["@float"] = colors.fw_teal,
 		["@annotation"] = { fg = colors.yellow },
-		["@attribute"] = { fg = colors.cyan },
+		["@attribute"] = colors.fw_blue,
 		["@namespace"] = { fg = colors.fg },
 
 		["@function.builtin"] = { fg = colors.fg }, --, bold = true },
@@ -158,7 +158,8 @@ local function setup(configs)
 		["@parameter"] = { fg = colors.fg },
 		["@parameter.reference"] = { fg = colors.fg },
 		["@method"] = { fg = colors.fg }, --, bold = true },
-		["@field"] = { fg = colors.fg },
+		["@field"] = { fg = colors.fg, bg = colors.bg },
+		-- ["@string.field"] = { fg = colors.fg },
 		["@property"] = { fg = colors.fg },
 		["@constructor"] = { fg = colors.fg },
 
@@ -189,9 +190,9 @@ local function setup(configs)
 		["@text.uri"] = { fg = colors.blue_text, bg = colors.blue_bg, italic = true }, -- urls
 		["@text.reference"] = { fg = colors.orange, bold = true },
 
-		["@tag"] = { fg = colors.cyan },
-		["@tag.attribute"] = { fg = colors.green },
-		["@tag.delimiter"] = { fg = colors.cyan },
+		["@tag"] = colors.fw_purple,
+		["@tag.attribute"] = {fg = colors.base2, italic=true},
+		["@tag.delimiter"] = { fg = colors.base2 },
 
 		-- Semantic
 		["@class"] = { fg = colors.cyan },
