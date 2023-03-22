@@ -1,4 +1,3 @@
--- wtf
 local base1 = "#605a52"
 local base2 = "#93836c"
 local base3 = "#b9a992"
@@ -7,6 +6,11 @@ local base5 = "#e4ddd2"
 local base6 = "#f1ece4"
 local base7 = "#f7f3ee"
 local accent = "#6a4cff"
+
+local yellow_text = "#5b5a43"
+local yellow_text_sec = "#a9994c"
+local yellow_bg = "#f3eec4"
+-- local yellow_bg = "#F2EDC0"
 
 local orange_text = "#5b5143"
 local orange_text_sec = "#957f5f"
@@ -50,6 +54,9 @@ return {
    base6 = "#f1ece4",
    base7 = "#f7f3ee",
    accent = "#6a4cff",
+   yellow_text = yellow_text,
+   yellow_text_sec = yellow_text_sec,
+   yellow_bg = yellow_bg,
    orange_text = "#5b5143",
    orange_text_sec = "#957f5f",
    orange_bg = "#f7e0c3",
@@ -104,5 +111,7 @@ return {
    fw_blue = { fg = blue_text, bg = blue_bg },
    fw_orange = { fg = orange_text, bg = orange_bg },
    fw_purple = { fg = purple_text, bg = purple_bg },
+   -- fw_yellow = { fg = yellow_text, bg = yellow_bg },
+   fw_yellow = { fg = yellow_text, bg = yellow_bg },
    fw_red = { fg = red_text, bg = red_bg },
 }
