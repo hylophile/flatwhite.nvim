@@ -34,7 +34,7 @@ local function setup(configs)
    }
 
    return {
-      Normal = colors.fw_base,
+      Normal = { fg = colors.fg, bg = colors.bg },
       NormalFloat = { fg = colors.fg, bg = colors.base6 },
       Comment = { fg = colors.comment, italic = configs.italic_comment },
       Constant = colors.fw_teal,
@@ -64,7 +64,7 @@ local function setup(configs)
       StorageClass = colors.fw_purple,
       Structure = colors.fw_orange,
       TypeDef = { fg = colors.yellow },
-      Special = { fg = colors.green_text, bg = colors.green_bg}, --italic = true },
+      Special = { fg = colors.green_text, bg = colors.green_bg }, --italic = true },
       SpecialComment = { fg = colors.comment, italic = true },
       Error = colors.fw_red,
       Todo = { fg = colors.blue_text, bg = colors.blue_bg, bold = true, italic = true },
@@ -82,7 +82,7 @@ local function setup(configs)
       StatusLineTermNC = { fg = colors.comment },
       Directory = colors.fw_teal,
       MoreMsg = colors.fw_green,
-      ModeMsg = {bold = true},
+      ModeMsg = { bold = true },
       DiffAdd = colors.fw_green,
       DiffChange = colors.fw_orange,
       DiffDelete = colors.fw_red,
@@ -127,7 +127,7 @@ local function setup(configs)
       ["@constant"] = colors.fw_teal,
       ["@constant.builtin"] = colors.fw_teal,
       ["@symbol"] = colors.fw_base,
-      ["@comment"] = {fg=colors.yellow_text, bg=colors.yellow_bg, italic=configs.italic_comment}, --colors.fw_yellow, --{ fg = colors.base2, italic = true },
+      ["@comment"] = { fg = colors.yellow_text, bg = colors.yellow_bg, italic = configs.italic_comment }, --colors.fw_yellow, --{ fg = colors.base2, italic = true },
       ["@constant.macro"] = colors.fw_teal,
       ["@string.regex"] = colors.fw_red,
       ["@string"] = colors.fw_green,
@@ -142,8 +142,8 @@ local function setup(configs)
       ["@function"] = configs.bold_function and colors.fw_base_bold or colors.fw_base,
       ["@function.builtin"] = configs.bold_function and colors.fw_base_bold or colors.fw_base,
       ["@function.macro"] = configs.bold_function and colors.fw_base_bold or colors.fw_base,
-      ["@parameter"] = colors.fw_base,
-      ["@parameter.reference"] = colors.fw_base,
+      ["@parameter"] = colors.fw_orange,
+      ["@parameter.reference"] = colors.fw_orange,
       ["@method"] = configs.bold_function and colors.fw_base_bold or colors.fw_base,
       ["@field"] = colors.fw_base,
       ["@string.field"] = colors.fw_base,
@@ -426,7 +426,14 @@ local function setup(configs)
       NeogitDiffDeleteHighlight = colors.fw_red,
       NeogitDiffContextHighlight = { bg = colors.base5 }, --{bold = true},
       NeogitHunkHeader = colors.fw_purple,
+      NeogitNotificationInfo = colors.fw_blue,
+      NeogitNotificationWarning = colors.fw_orange,
+      NeogitNotificationError = colors.fw_red,
       -- NeogitHunkHeaderHighlight = {reverse = true},
+      -- Illuminate
+      -- IlluminatedWordText = { bg = colors.base6, underline = true },
+      -- IlluminatedWordRead = { bg = colors.base6, underline = true },
+      -- IlluminatedWordWrite = { bg = colors.base6, underline = true },
    }
 end
 
