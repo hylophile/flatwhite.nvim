@@ -36,7 +36,8 @@ local function setup(configs)
    return {
       Normal = { fg = colors.fg, bg = colors.bg },
       NormalFloat = { fg = colors.fg, bg = colors.base6 },
-      Comment = { fg = colors.comment, italic = configs.italic_comment },
+      -- Comment = { fg = colors.comment, italic = configs.italic_comment },
+      Comment = { fg = colors.yellow_text, bg = colors.yellow_bg, italic = configs.italic_comment },
       Constant = colors.fw_teal,
       String = colors.fw_green,
       Character = colors.fw_green,
@@ -147,7 +148,7 @@ local function setup(configs)
       ["@method"] = configs.bold_function and colors.fw_base_bold or colors.fw_base,
       -- ["@field"] = colors.fw_base,
       -- ["@field.yaml"] = {fg = colors.base1, bg = colors.base7},
-      ["@field"] = {fg = colors.base1, bg = colors.base7},
+      ["@field"] = { fg = colors.base1, bg = colors.base7 },
       ["@property"] = colors.fw_base,
       ["@constructor"] = colors.fw_base,
       ["@conditional"] = colors.fw_purple,
@@ -163,19 +164,19 @@ local function setup(configs)
       ["@type.qualifier"] = colors.fw_purple,
       ["@structure"] = colors.fw_purple,
       ["@include"] = colors.fw_purple,
-      ["@variable"] = colors.fw_orange,
-      ["@variable.builtin"] = {fg=colors.fg, italic=true},--colors.fw_base,
+      -- ["@variable"] = colors.fw_orange,
+      ["@variable.builtin"] = { fg = colors.fg, italic = true }, --colors.fw_base,
       ["@text"] = colors.fw_orange,
       ["@text.strong"] = { fg = colors.orange_text, bg = colors.orange_bg, bold = true },
       ["@text.emphasis"] = { fg = colors.orange_text, bg = colors.orange_bg, italic = true },
       ["@text.underline"] = { fg = colors.orange_text, bg = colors.orange_bg, underline = true },
       ["@text.title"] = { fg = colors.purple_text, bg = colors.purple_bg, bold = true }, -- title
       ["@text.literal"] = colors.fw_orange,
-      ["@text.uri"] = { fg = colors.blue_text, bg = colors.blue_bg, italic = true },     -- urls
+      ["@text.uri"] = { fg = colors.blue_text, bg = colors.blue_bg, italic = true }, -- urls
       ["@text.reference"] = { fg = colors.orange_text, bg = colors.orange_bg, bold = true },
       ["@tag"] = colors.fw_purple,
       ["@tag.attribute"] = { fg = colors.base2, bg = colors.base7, italic = true },
-      ["@tag.delimiter"] = { fg = colors.base2, bg = colors.base7, },
+      ["@tag.delimiter"] = { fg = colors.base2, bg = colors.base7 },
       -- Semantic
       ["@class"] = colors.fw_teal,
       ["@struct"] = colors.fw_teal,

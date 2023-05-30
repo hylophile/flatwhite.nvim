@@ -12,7 +12,7 @@ local tbl_deep_extend = vim.tbl_deep_extend
 ---@field colors Palette
 ---@field overrides table<string, Highlight>
 local DEFAULT_CONFIG = {
-   italic_comment = false,
+   italic_comment = true,
    bold_function = true,
    transparent_bg = false,
    show_end_of_buffer = false,
@@ -109,6 +109,10 @@ end
 return {
    load = load,
    setup = setup,
-   configs = function() return local_configs end,
-   colors = function() return local_configs.colors end,
+   configs = function()
+      return local_configs
+   end,
+   colors = function()
+      return local_configs.colors
+   end,
 }
