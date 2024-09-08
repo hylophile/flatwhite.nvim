@@ -1,5 +1,5 @@
 <p align="center"><a href="https://nope.com/">Flatwhite</a> colorscheme for <a href="https://neovim.io/">NEOVIM</a> written in Lua</p>
-
+(originally forked from https://github.com/Mofiqul/dracula.nvim)
 <!-- ![TypeScript and NvimTree](./assets/1.png) -->
 
 <!-- ![Lua](./assets/2.png) -->
